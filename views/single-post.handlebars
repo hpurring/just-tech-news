@@ -24,7 +24,9 @@
 </form>
 {{/if}}
 
-<div class="comments">
+
+{{> comments post.comments}}
+{{!-- <div class="comments">
   {{#each post.comments}}
   <section class="comment">
     <div class="meta">
@@ -35,7 +37,7 @@
     </div>
   </section>
   {{/each}}
-</div>
+</div> --}}
 
 {{#if loggedIn}}
 <script src="/javascript/comment.js"></script>
